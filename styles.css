@@ -1,50 +1,50 @@
 body {
-  margin: 0px;
+  margin: 0vw;
   font-family: "Pacifico", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*  background-image: url("./tabletop.jpeg");
-  background-position: center; */
 }
+
 .edge {
-  height: 800px;
-  width: 800px;
-  margin: 0px 100px 0px 100px;
-  padding: 0px 0px 100px 0px;
+  height: 80vh;
+  width: 80vw;
+  margin: 0vh 10vw 0vh 10vw;
+  padding: 0vh 0vw 10vh 0vw;
   background-color: red;
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 15px;
-  border: rgba(138, 0, 0, 0.972) solid 1px;
+  border-radius: 2vw;
+  border: rgba(138, 0, 0, 0.972) solid 0.2vw;
 }
 .pre-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
+  width: 55vw;
 }
 h1 {
   text-align: center;
-  margin: 5px 5px 0px 5px;
-  -webkit-text-stroke: darkgoldenrod 0.1px;
+  margin: 0.5vh 0.5vw 0vh 0.5vw;
+  -webkit-text-stroke: darkgoldenrod 0.01vw;
   color: gold;
 }
 button {
   width: 6rem;
   height: 3rem;
-  margin: 8px 20px 20px 20px;
-  border-radius: 6px;
-  border: gray solid 1px;
+  margin: 0.8vh 2vw 2vh 2vw;
+  border-radius: 0.6vw;
+  border: gray solid 0.1vw;
 }
 .container {
-  height: 550px;
+  height: 55vh;
   /* margin: 0px 100px 50px 100px; */
-  width: 550px;
+  /* margin: 0vh 10vw 50vh 10vw; */
+  width: 55vw;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -59,10 +59,10 @@ button {
 }
 .column {
   flex-direction: column;
-  border: black solid 1px;
+  border: black solid 0.1vw;
 }
 
 .row {
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
+  border-top: black solid 0.1vw;
+  border-bottom: black solid 0.1vw;
 }

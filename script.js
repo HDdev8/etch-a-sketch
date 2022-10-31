@@ -11,7 +11,7 @@ const button = document.createElement("button");
 button.classList.add("reset");
 button.textContent = "Reset grid!";
 preContainer.appendChild(button);
-
+//
 function generateBoxes() {
   let fragment = new DocumentFragment();
   let numberOfRows = 16;
@@ -31,8 +31,6 @@ function generateBoxes() {
   }
   container.appendChild(fragment);
 }
-generateBoxes();
-
 function getRandomColor() {
   function randomNumber(number) {
     return Math.floor(Math.random() * (number + 1));
@@ -42,18 +40,26 @@ function getRandomColor() {
   )}, ${randomNumber(255)}, ${1})`;
   return color;
 }
+//
+generateBoxes();
+
 let randomColor = getRandomColor();
-
 const rows = document.querySelectorAll(".row");
-
 rows.forEach((row) => {
   row.addEventListener("mouseenter", (e) => {
+    e.target.style.background = randomColor;
+  });
+});
+rows.forEach((row) => {
+  row.addEventListener("touchstart", (e) => {
     e.target.style.background = randomColor;
   });
 });
 //
 //
 //
+//
+
 const generateNewBoxes = function () {
   function removeEverything() {
     const columns = document.querySelectorAll(".column");
@@ -93,8 +99,7 @@ const generateNewBoxes = function () {
     }
     container.appendChild(fragment);
   };
-  newBoxes();
-  function getRandomColor() {
+  const getRandomColor = function () {
     function randomNumber(number) {
       return Math.floor(Math.random() * (number + 1));
     }
@@ -102,8 +107,10 @@ const generateNewBoxes = function () {
       255
     )}, ${randomNumber(255)}, ${1})`;
     return color;
-  }
+  };
   //
+  newBoxes();
+
   let randomColor = getRandomColor();
   const rows = document.querySelectorAll(".row");
 
@@ -112,8 +119,17 @@ const generateNewBoxes = function () {
       e.target.style.background = randomColor;
     });
   });
+
+  rows.forEach((row) => {
+    row.addEventListener("touchstart", (e) => {
+      e.target.style.background = randomColor;
+    });
+  });
 };
 
 button.addEventListener("click", () => {
+  generateNewBoxes();
+});
+button.addEventListener("touch", () => {
   generateNewBoxes();
 });
