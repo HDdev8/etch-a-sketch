@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px;
+  font-family: "Pacifico", cursive;
+}
+.pre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin: 5px 5px 0px 5px;
+}
+button {
+  width: 6rem;
+  height: 3rem;
+  margin: 8px 20px 20px 20px;
+  border-radius: 6px;
+  border: silver solid 0.5px;
+}
+.container {
+  height: 600px;
+  margin: 0px 100px 50px 100px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.row,
+.column {
+  display: flex;
+  flex: 1;
+  height: auto;
+  width: auto;
+}
+.column {
+  flex-direction: column;
+  border: black solid 1px;
+}
+
+.row {
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+}
