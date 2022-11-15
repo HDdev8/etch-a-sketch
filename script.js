@@ -1,10 +1,11 @@
 const body = document.querySelector("body");
+const edge = document.querySelector(".edge");
 
 const container = document.querySelector(".container");
 
 const preContainer = document.createElement("div");
 preContainer.classList.add("pre-container");
-body.insertBefore(preContainer, container);
+edge.insertBefore(preContainer, container);
 
 const button = document.createElement("button");
 button.classList.add("reset");

@@ -1,33 +1,54 @@
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: 0px;
   font-family: "Pacifico", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*  background-image: url("./tabletop.jpeg");
+  background-position: center; */
+}
+.edge {
+  height: 800px;
+  width: 800px;
+  margin: 0px 100px 0px 100px;
+  padding: 0px 0px 100px 0px;
+  background-color: red;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  border: rgba(138, 0, 0, 0.972) solid 1px;
 }
 .pre-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 550px;
 }
 h1 {
   text-align: center;
   margin: 5px 5px 0px 5px;
+  -webkit-text-stroke: darkgoldenrod 0.1px;
+  color: gold;
 }
 button {
   width: 6rem;
   height: 3rem;
   margin: 8px 20px 20px 20px;
   border-radius: 6px;
-  border: silver solid 0.5px;
+  border: gray solid 1px;
 }
 .container {
-  height: 600px;
-  margin: 0px 100px 50px 100px;
-  width: 600px;
+  height: 550px;
+  /* margin: 0px 100px 50px 100px; */
+  width: 550px;
   display: flex;
   justify-content: center;
   align-self: center;
+  background-color: white;
 }
 .row,
 .column {
